@@ -1,0 +1,15 @@
+# MSVC / VS
+.vs/
+**/Debug/
+**/Release/
+**/*.user
+**/*.suo
+**/*.sdf
+**/*.opensdf
+**/*.exe
+**/*.obj
+**/*.pdb
+**/*.ilk
+**/*.ipch
+**/x64/
+**/x86/

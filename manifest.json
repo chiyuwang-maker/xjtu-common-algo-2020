@@ -1,0 +1,272 @@
+[
+  {
+    "num": "01",
+    "slug": "profit-tiers",
+    "title": "利润分段提成",
+    "project": "Project1",
+    "files": [
+      "源.c"
+    ],
+    "tags": "分支/分段函数"
+  },
+  {
+    "num": "02",
+    "slug": "neighbor-letters",
+    "title": "大写字母的左邻右舍",
+    "project": "Project2",
+    "files": [
+      "源.c"
+    ],
+    "tags": "字符/环形"
+  },
+  {
+    "num": "03",
+    "slug": "four-arithmetic",
+    "title": "两数四则运算",
+    "project": "Project2",
+    "files": [
+      "源.cpp"
+    ],
+    "tags": "算术/IO"
+  },
+  {
+    "num": "04",
+    "slug": "list-gcd",
+    "title": "以0结尾数列的最大公约数",
+    "project": "Project3",
+    "files": [
+      "源.c"
+    ],
+    "tags": "枚举/GCD"
+  },
+  {
+    "num": "05",
+    "slug": "char-ascii-next",
+    "title": "字符、ASCII与后继",
+    "project": "Project5",
+    "files": [
+      "源.cpp"
+    ],
+    "tags": "字符与整数"
+  },
+  {
+    "num": "06",
+    "slug": "triangle-valid",
+    "title": "能否构成三角形",
+    "project": "Project6",
+    "files": [
+      "源.c"
+    ],
+    "tags": "几何条件"
+  },
+  {
+    "num": "07",
+    "slug": "automorphic",
+    "title": "区间自守数",
+    "project": "Project7",
+    "files": [
+      "源.c"
+    ],
+    "tags": "数论/自守数"
+  },
+  {
+    "num": "08",
+    "slug": "consecutive-sum",
+    "title": "连续正整数之和分解",
+    "project": "Project8",
+    "files": [
+      "源.c"
+    ],
+    "tags": "数论/连续和"
+  },
+  {
+    "num": "09",
+    "slug": "max-frequency",
+    "title": "最大值及其出现次数",
+    "project": "Project9",
+    "files": [
+      "源.c"
+    ],
+    "tags": "数组/计数"
+  },
+  {
+    "num": "10",
+    "slug": "palindrome-range",
+    "title": "1000到n的回文数",
+    "project": "Project10",
+    "files": [
+      "源.c"
+    ],
+    "tags": "回文/函数"
+  },
+  {
+    "num": "11",
+    "slug": "vote-count",
+    "title": "选票统计1/2/3",
+    "project": "Project11",
+    "files": [
+      "源.c"
+    ],
+    "tags": "计数/哨兵"
+  },
+  {
+    "num": "12",
+    "slug": "ball-bounce",
+    "title": "球第10次落地与反弹",
+    "project": "Project12",
+    "files": [
+      "源.c"
+    ],
+    "tags": "模拟/等比"
+  },
+  {
+    "num": "13",
+    "slug": "array-rotate",
+    "title": "数组循环移位",
+    "project": "Project14",
+    "files": [
+      "源.c"
+    ],
+    "tags": "数组/环置换"
+  },
+  {
+    "num": "14",
+    "slug": "digit-flip-sumdiff",
+    "title": "和差还原颠倒数字",
+    "project": "Project16",
+    "files": [
+      "源.c"
+    ],
+    "tags": "数位颠倒"
+  },
+  {
+    "num": "15",
+    "slug": "legendre-poly",
+    "title": "勒让德多项式求值",
+    "project": "Project17",
+    "files": [
+      "源.c"
+    ],
+    "tags": "递归/特殊函数"
+  },
+  {
+    "num": "16",
+    "slug": "trim-stars",
+    "title": "去掉首尾星号",
+    "project": "Project18",
+    "files": [
+      "源.c"
+    ],
+    "tags": "字符串"
+  },
+  {
+    "num": "17",
+    "slug": "bin-to-ipv4",
+    "title": "二进制串转点分IP",
+    "project": "Project19",
+    "files": [
+      "源.c"
+    ],
+    "tags": "进制/位权"
+  },
+  {
+    "num": "18",
+    "slug": "max-min-avg",
+    "title": "最值与平均值",
+    "project": "Project20",
+    "files": [
+      "源.c"
+    ],
+    "tags": "函数/指针出参"
+  },
+  {
+    "num": "19",
+    "slug": "word-freq",
+    "title": "单词词频统计",
+    "project": "Project21",
+    "files": [
+      "源.c"
+    ],
+    "tags": "字符串/词频"
+  },
+  {
+    "num": "20",
+    "slug": "strip-stars",
+    "title": "删除全部星号",
+    "project": "Project22",
+    "files": [
+      "源.c"
+    ],
+    "tags": "字符串过滤"
+  },
+  {
+    "num": "21",
+    "slug": "recruit-filter",
+    "title": "新兵奇偶轮换淘汰",
+    "project": "Project23",
+    "files": [
+      "源.c"
+    ],
+    "tags": "模拟/约瑟夫变体"
+  },
+  {
+    "num": "22",
+    "slug": "star-state",
+    "title": "星号串状态处理",
+    "project": "Project25",
+    "files": [
+      "源.c"
+    ],
+    "tags": "字符串状态机"
+  },
+  {
+    "num": "23",
+    "slug": "signin-extrema",
+    "title": "最早签到与最晚签退",
+    "project": "Project26",
+    "files": [
+      "源.c"
+    ],
+    "tags": "结构体/串比较"
+  },
+  {
+    "num": "24",
+    "slug": "turtle-hare",
+    "title": "龟兔赛跑小游戏",
+    "project": "Project29",
+    "files": [
+      "源.c"
+    ],
+    "tags": "交互模拟"
+  },
+  {
+    "num": "25",
+    "slug": "point-circle",
+    "title": "点与圆位置（未完成）",
+    "project": "Project30",
+    "files": [
+      "源.cpp"
+    ],
+    "tags": "几何"
+  },
+  {
+    "num": "26",
+    "slug": "gcd-lcm",
+    "title": "最大公约数与最小公倍数",
+    "project": "Project31",
+    "files": [
+      "源.cpp"
+    ],
+    "tags": "数论"
+  },
+  {
+    "num": "27",
+    "slug": "student-scores",
+    "title": "学生成绩录入（未完成）",
+    "project": "Project32",
+    "files": [
+      "源.c"
+    ],
+    "tags": "结构体"
+  }
+]
