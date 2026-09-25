@@ -1,59 +1,94 @@
-# 西交公共课算法题（2020届）
+# XJTU Common-Course Algorithms (Class of 2020)
 
-西安交通大学 **2020 届**公共课算法练习：作者于**大一下**用 Visual Studio「**每建一个项目练一道算法题**」完成的 C/C++ 手作归档。
+**Chinese title:** 西交公共课算法题（2020届）
 
-- 主工程目录：`C:\Users\13066\source\repos\`（Project1–Project35 等）
-- 各题目录名/中文标题为据算法含义**自拟**；题面均由源码反推，非原始试卷
-- 每题目录含题面 `README.md` 与 `solution.c` / `solution.cpp`（自大一下工程导出）；不含 `.sln`/`.vcxproj`、Debug/Release/`.vs` 等构建产物
-- **禁止**覆盖用户原工程；本树可整体清空重建
+Freshman-year (second semester) C/C++ drills from a **common / general-education style programming course** at Xi’an Jiaotong University. Each problem was originally a separate Visual Studio project (“one project per problem”). This repository archives those solutions with light packaging for a Western-style GitHub portfolio **without rewriting the coursework itself**.
 
-## 项目原名 → 题号 → 题名
+| | |
+|---|---|
+| **Author** | Chiyu Wang |
+| **Context** | XJTU · Class of 2020 · ~freshman spring |
+| **Language** | C / C++ (`solution.c` / `solution.cpp`) |
+| **Problems** | 27 numbered entries under `problems/` |
 
-| 原项目 | 题号 | 自拟题名 | 考点 |
-|--------|------|----------|------|
-| Project1 | 01 | 利润分段提成 | 分支/分段函数 |
-| Project2 | 02 | 大写字母的左邻右舍 | 字符/环形 |
-| Project2 | 03 | 两数四则运算 | 算术/IO |
-| Project3 | 04 | 以0结尾数列的最大公约数 | 枚举/GCD |
-| Project5 | 05 | 字符、ASCII与后继 | 字符与整数 |
-| Project6 | 06 | 能否构成三角形 | 几何条件 |
-| Project7 | 07 | 区间自守数 | 数论/自守数 |
-| Project8 | 08 | 连续正整数之和分解 | 数论/连续和 |
-| Project9 | 09 | 最大值及其出现次数 | 数组/计数 |
-| Project10 | 10 | 1000到n的回文数 | 回文/函数 |
-| Project11 | 11 | 选票统计1/2/3 | 计数/哨兵 |
-| Project12 | 12 | 球第10次落地与反弹 | 模拟/等比 |
-| Project14 | 13 | 数组循环移位 | 数组/环置换 |
-| Project16 | 14 | 和差还原颠倒数字 | 数位颠倒 |
-| Project17 | 15 | 勒让德多项式求值 | 递归/特殊函数 |
-| Project18 | 16 | 去掉首尾星号 | 字符串 |
-| Project19 | 17 | 二进制串转点分IP | 进制/位权 |
-| Project20 | 18 | 最值与平均值 | 函数/指针出参 |
-| Project21 | 19 | 单词词频统计 | 字符串/词频 |
-| Project22 | 20 | 删除全部星号 | 字符串过滤 |
-| Project23 | 21 | 新兵奇偶轮换淘汰 | 模拟/约瑟夫变体 |
-| Project25 | 22 | 星号串状态处理 | 字符串状态机 |
-| Project26 | 23 | 最早签到与最晚签退 | 结构体/串比较 |
-| Project29 | 24 | 龟兔赛跑小游戏 | 交互模拟 |
-| Project30 | 25 | 点与圆位置 | 几何 |
-| Project31 | 26 | 最大公约数与最小公倍数 | 数论 |
-| Project32 | 27 | 学生成绩录入 | 结构体 |
+## What stays “as written”
 
+- Solution source is **your original coursework logic** (including period-typical style and known mistakes where noted in per-problem notes).
+- Chinese problem titles and the historical VS project mapping are kept.
+- No `.sln` / `.vcxproj` / Debug-Release junk — sources and statements only.
 
-## 未编入题号（空壳 / 向导 / 碎片）
+Problem statements in each folder were **inferred from the source**, not copied from an official exam sheet.
 
-| 原项目 | 说明 |
-|--------|------|
-| Project15,27,28,33,34 | 无源码 |
-| Project24 | 仅 `#include`，无逻辑 |
-| Project35 | 数组初始化未完成骨架 |
-| ConsoleApplication1 | Hello World 向导 |
-| ATLProject1 | ATL 向导 |
-| 训练 | 打印数组 + 未完成平方根，弱练习 |
-| Project4 | 题05草稿（已作 draft 附于05） |
-| Project13 | 题11草稿（已作 draft 附于11） |
-| Project14/源.cp | 题04草稿 |
+## Western-facing interface (how to use this repo)
 
-## 源码文件
+```text
+problems/
+  01-profit-tiers/
+    README.md      # problem note (CN; inferred statement)
+    solution.c     # original-style solution
+  ...
+```
 
-每题目录含 `solution.c` 或 `solution.cpp`（自大一下 VS 工程导出）。题面由源码反推；干净树题解已按「记录（大一下原写法）/点评/优化」注释规范整理（修笔误、理顺逻辑；题 13 主路径改为三次逆置等），并保留 scanf_s / VS 控制台风格。
+**Build one problem (MSVC):** open the matching historical project on your machine, or compile the `solution.*` file in a C/C++ toolchain.
+
+**Build one problem (gcc/clang example):**
+
+```bash
+cd problems/01-profit-tiers
+gcc -std=c11 solution.c -o sol
+# Note: some files use Microsoft `scanf_s`; under gcc you may need to
+# adjust I/O or compile with an MSVC-compatible environment.
+```
+
+Run from the problem directory and follow that problem’s README for I/O expectations.
+
+## Problem index
+
+| VS project | # | Title (ZH) | Topics |
+|------------|---|------------|--------|
+| Project1 | 01 | 利润分段提成 | branching / piecewise |
+| Project2 | 02 | 大写字母的左邻右舍 | chars / wrap-around |
+| Project2 | 03 | 两数四则运算 | arithmetic / I/O |
+| Project3 | 04 | 以0结尾数列的最大公约数 | enumeration / GCD |
+| Project5 | 05 | 字符、ASCII与后继 | char vs int |
+| Project6 | 06 | 能否构成三角形 | geometry predicates |
+| Project7 | 07 | 区间自守数 | automorphic numbers |
+| Project8 | 08 | 连续正整数之和分解 | consecutive sums |
+| Project9 | 09 | 最大值及其出现次数 | arrays / counting |
+| Project10 | 10 | 1000到n的回文数 | palindromes |
+| Project11 | 11 | 选票统计1/2/3 | counting / sentinel |
+| Project12 | 12 | 球第10次落地与反弹 | simulation |
+| Project14 | 13 | 数组循环移位 | rotation |
+| Project16 | 14 | 和差还原颠倒数字 | digit reverse |
+| Project17 | 15 | 勒让德多项式求值 | recursion |
+| Project18 | 16 | 去掉首尾星号 | strings |
+| Project19 | 17 | 二进制串转点分IP | base conversion |
+| Project20 | 18 | 最值与平均值 | functions / out-params |
+| Project21 | 19 | 单词词频统计 | word frequency |
+| Project22 | 20 | 删除全部星号 | string filter |
+| Project23 | 21 | 新兵奇偶轮换淘汰 | Josephus-like |
+| Project25 | 22 | 星号串状态处理 | string state machine |
+| Project26 | 23 | 最早签到与最晚签退 | structs / string compare |
+| Project29 | 24 | 龟兔赛跑小游戏 | interactive sim |
+| Project30 | 25 | 点与圆位置 | geometry |
+| Project31 | 26 | 最大公约数与最小公倍数 | GCD / LCM |
+| Project32 | 27 | 学生成绩录入 | structs |
+
+Empty / wizard / incomplete VS projects from the same era are listed only as notes below and are **not** given problem numbers.
+
+## Not numbered (shells / fragments)
+
+| VS project | Note |
+|------------|------|
+| Project15, 27, 28, 33, 34 | no useful source |
+| Project24 | include-only stub |
+| Project35 | unfinished skeleton |
+| ConsoleApplication1 | Hello World wizard |
+
+## Academic honesty
+
+These are the author’s own course solutions, archived for learning history. Problem text is reconstructed from code intent. Prefer citing as coursework archive, not as contest-grade editorial solutions.
+
+## License
+
+No SPDX license file yet. Rights remain with the author unless a license is added later.
