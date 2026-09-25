@@ -17,7 +17,7 @@ void reverse(int a[], int left, int right)
 int main()
 {
 	int a, l;
-	/* 记录：当时原写法带扫尾换行 scanf_s("%d %d\n", ...)；非 MSVC 可改 scanf */
+	/* 记录：大一下原写法带扫尾换行 scanf_s("%d %d\n", ...)；非 MSVC 可改 scanf */
 	scanf_s("%d %d", &a, &l);
 	int c[200];
 	scanf_s("%d", &c[0]);
@@ -29,7 +29,7 @@ int main()
 	int b = l % a; /* 实际右移位数；b==0 时序列不变 */
 
 	/*
-	 * 记录：当时原写法按 a 与步长整除关系分支——
+	 * 记录：大一下原写法按 a 与步长整除关系分支——
 	 *   1) a%b==0 时反复「整体右挪一格」（临时量 p 接住末元再塞到头）；
 	 *   2) a%(a-b)==0 时反复「整体左挪一格」；
 	 *   3) 否则沿环做置换：q=(p+b)%a，用 e/i 两个整型倒手被覆盖的值。

@@ -11,7 +11,7 @@ int main()
 	int n, i;
 	char first[9], last[9], first_ID[20], last_ID[20];
 
-	/* 记录：当时原写法 scanf_s("%s %s %s", ..., &Sign_in_time, ...)——对数组多取了 &；
+	/* 记录：大一下原写法 scanf_s("%s %s %s", ..., &Sign_in_time, ...)——对数组多取了 &；
 	 * MSVC 的 scanf_s 读字符串还应传缓冲区大小。 */
 	/* 点评：HH:MM:SS 字典序即时间序，strcmp 可直接比早晚。 */
 	/* 优化：补上缓冲区大小；去掉错误的 &；逻辑保持最早签到 / 最晚签退。 */

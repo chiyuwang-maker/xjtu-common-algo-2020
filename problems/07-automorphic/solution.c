@@ -6,7 +6,7 @@ int main()
 	int x, y, m, n, t, i, q, z;
 	int first;
 
-	/* 记录：当时原写法用 pow(10,n) 得 double t，再 (int)t 取模；int t 与 double t 同名阴影；
+	/* 记录：大一下原写法用 pow(10,n) 得 double t，再 (int)t 取模；int t 与 double t 同名阴影；
 	 * 若区间内无自守数，打印 a[-1]。 */
 	/* 点评：自守数判定「m² 末 n 位 == m」即 (m*m-m) % 10^n == 0；位数用整除计数即可。 */
 	/* 优化：改整数累乘求 10^n，避免 pow；无结果时不输出；保留扫描+收集。 */

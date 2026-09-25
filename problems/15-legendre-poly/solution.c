@@ -6,7 +6,7 @@ double poly(int n, double x)
 	double p0, p1, p;
 	int k;
 
-	/* 记录：当时原写法 long float（非标准）；裸递归导致指数级重复计算；
+	/* 记录：大一下原写法 long float（非标准）；裸递归导致指数级重复计算；
 	 * 函数定义在 #include 之前；%lf 读入 long float 也不匹配。 */
 	/* 点评：递推式天然适合自底向上迭代，O(n) 且无栈风险。 */
 	/* 优化：改 double + 迭代；保留同一递推公式。 */

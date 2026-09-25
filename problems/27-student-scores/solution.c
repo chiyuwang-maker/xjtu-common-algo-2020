@@ -2,7 +2,7 @@
 #include<string.h>
 
 /*
- * 记录：当时原草稿里还写过一个无关的 struct Platfom / Jackson，
+ * 记录：大一下原草稿里还写过一个无关的 struct Platfom / Jackson，
  * 以及 Jackson.character[8] = {'a',...} 这类非法「数组整体赋值」；
  * 录入循环里 gets + 残缺的 scanf_s; 且用 %d 去读 float score；
  * 最后 printf 未初始化的 float a。整份是结构体练习未完成稿。
